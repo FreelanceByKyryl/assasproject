@@ -1,0 +1,931 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111513">
+  <meta name="description" content="NEXLOOP — an interactive AI workspace concept.">
+  <title>NEXLOOP — Make room for better work</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="scroll-meter" aria-hidden="true">
+  <span id="scroll-meter-bar"></span>
+</div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="NEXLOOP home">
+      <span class="brand-symbol">✳</span>
+      nexloop<span class="brand-period">.</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main menu">
+      <a href="#features">Product</a>
+      <a href="#demo">Live demo</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a class="mobile-nav-cta" href="#contact">
+        Get early access <span>↗</span>
+      </a>
+    </nav>
+
+    <a class="nav-cta" href="#contact">
+      Get early access <span>↗</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="main-nav"
+      aria-label="Open navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero section-pad" aria-labelledby="hero-title">
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="signal"></span>
+          THE AI WORKSPACE, REIMAGINED
+          <span class="eyebrow-id">/ 001</span>
+        </div>
+
+        <h1 id="hero-title">
+          Less<br>
+          busywork.<br>
+          <span class="highlight-word">
+            More <i>flow<span class="word-dot">.</span></i>
+          </span>
+        </h1>
+
+        <p class="hero-description">
+          Turn scattered tasks into one clear direction.
+          Plan, create, and move faster with an AI workspace
+          built around your team.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#demo" class="button button-dark">
+            Explore interactive demo
+            <span class="button-arrow">↗</span>
+          </a>
+
+          <a href="#features" class="text-link">
+            Discover the platform <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-caption">
+          <div class="mini-avatars" aria-hidden="true">
+            <span>A</span><span>J</span><span>M</span>
+          </div>
+          <p>
+            Built for makers, thinkers<br>
+            and teams that move.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="hero-art"
+        aria-label="Illustrative NEXLOOP AI dashboard preview"
+      >
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+
+        <div class="floating-badge badge-top">
+          <span class="badge-spark">✦</span>
+          <span>YOUR IDEAS,<br><strong>IN MOTION.</strong></span>
+        </div>
+
+        <div class="dashboard-shell" id="dashboard-shell">
+
+          <div class="dash-top">
+            <span class="dash-dots">
+              <b></b><b></b><b></b>
+            </span>
+            <span>workspace / overview</span>
+            <span class="dash-online">
+              <i></i> LIVE PREVIEW
+            </span>
+          </div>
+
+          <div class="dash-content">
+
+            <aside class="dash-sidebar" aria-hidden="true">
+              <span class="dash-logo">✳</span>
+              <span class="dash-side-active">▦</span>
+              <span>◷</span>
+              <span>◇</span>
+              <span>⚙</span>
+              <span class="dash-avatar">A</span>
+            </aside>
+
+            <div class="dash-main">
+
+              <div class="dash-heading">
+                <div>
+                  <small>MONDAY, 12 NOVEMBER</small>
+                  <h2>Good morning, Alex <span>✳</span></h2>
+                </div>
+                <span class="dash-menu">⋯</span>
+              </div>
+
+              <div class="dash-stat-row">
+                <div class="dash-stat">
+                  <small>Tasks in motion</small>
+                  <strong>24 <span>↗ 12%</span></strong>
+                </div>
+                <div class="dash-stat">
+                  <small>Hours returned</small>
+                  <strong>18.5 <span>+ this week</span></strong>
+                </div>
+              </div>
+
+              <div class="dash-card-grid">
+
+                <div class="dash-tasks">
+                  <div class="dash-card-title">
+                    Today's priorities <span>•••</span>
+                  </div>
+
+                  <div class="task-row">
+                    <span class="task-check checked">✓</span>
+                    <span>Review launch brief</span>
+                    <b>DONE</b>
+                  </div>
+
+                  <div class="task-row">
+                    <span class="task-check">○</span>
+                    <span>Plan next sprint</span>
+                    <b class="in-progress">IN FLOW</b>
+                  </div>
+
+                  <div class="task-row">
+                    <span class="task-check">○</span>
+                    <span>Sync with product team</span>
+                    <b>UP NEXT</b>
+                  </div>
+                </div>
+
+                <div class="dash-graph">
+                  <div class="dash-card-title">
+                    Focus trend <span>↗</span>
+                  </div>
+
+                  <svg
+                    viewBox="0 0 210 125"
+                    role="img"
+                    aria-label="Illustrative productivity graph"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="chart-fill"
+                        x1="0" x2="0" y1="0" y2="1"
+                      >
+                        <stop
+                          offset="0"
+                          stop-color="#d2fa76"
+                          stop-opacity=".35"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#d2fa76"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+
+                    <path
+                      d="M8 104 L40 86 L70 96 L98 58 L123 68 L153 31 L182 43 L202 14 L202 120 L8 120 Z"
+                      fill="url(#chart-fill)"
+                    />
+
+                    <path
+                      d="M8 104 L40 86 L70 96 L98 58 L123 68 L153 31 L182 43 L202 14"
+                      fill="none"
+                      stroke="#bdf05c"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <circle
+                      cx="202" cy="14" r="6"
+                      fill="#bdf05c"
+                      stroke="#111513"
+                      stroke-width="3"
+                    />
+                  </svg>
+
+                  <small>↑ Your momentum is growing</small>
+                </div>
+              </div>
+
+              <div class="dash-bottom">
+                <span class="dash-bottom-icon">✦</span>
+                <span>
+                  AI insight: You've cleared 8 tasks
+                  ahead of schedule.
+                </span>
+                <span>↗</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-bottom">
+          <span class="pulse-orb">✦</span>
+          <div>
+            <strong>Workflow complete</strong>
+            <small>3 steps automated successfully</small>
+          </div>
+          <span class="badge-check">✓</span>
+        </div>
+
+        <span class="hero-art-note">
+          INTERFACE STUDY // CONCEPT 01
+        </span>
+      </div>
+
+    </div>
+
+    <div class="hero-foot container">
+      <span>SCROLL TO EXPLORE <b>↓</b></span>
+      <span>NEXLOOP / AI-POWERED WORKSPACE / 2026</span>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-set">
+        LESS NOISE <b>✳</b>
+        MORE MOMENTUM <b>✳</b>
+        IDEAS IN MOTION <b>✳</b>
+        WORK SMARTER <b>✳</b>
+      </div>
+
+      <div class="ticker-set">
+        LESS NOISE <b>✳</b>
+        MORE MOMENTUM <b>✳</b>
+        IDEAS IN MOTION <b>✳</b>
+        WORK SMARTER <b>✳</b>
+      </div>
+    </div>
+  </div>
+
+  <section
+    class="features section-pad"
+    id="features"
+    aria-labelledby="features-title"
+  >
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <div class="section-tag">[ 01 / THE PLATFORM ]</div>
+
+        <div>
+          <h2 id="features-title">
+            All your brilliance.<br>
+            <span>None of the chaos.</span>
+          </h2>
+          <p>
+            Your favorite parts of work, minus everything
+            that slows you down. One beautifully
+            connected space.
+          </p>
+        </div>
+      </div>
+
+      <div class="bento-grid">
+
+        <article class="feature-card feature-large reveal">
+          <div class="feature-card-head">
+            <span>01 / UNIFIED SPACE</span>
+            <span class="round-icon">↗</span>
+          </div>
+
+          <div class="feature-main-copy">
+            <h3>Everything, finally<br>in <em>sync.</em></h3>
+            <p>
+              One home for plans, files, conversations,
+              and ideas. Context stays connected,
+              not scattered across 12 tabs.
+            </p>
+          </div>
+
+          <div class="stack-graphic" aria-hidden="true">
+            <div class="stack-card stack-card-one">
+              <span>✳</span> Team workspace <b>▢ ▢ ▢</b>
+            </div>
+            <div class="stack-card stack-card-two">
+              <span>▦</span> Weekly roadmap <b>━━━</b>
+            </div>
+            <div class="stack-card stack-card-three">
+              <span>✦</span> AI suggestions <b>↗</b>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card feature-purple reveal">
+          <div class="feature-card-head">
+            <span>02 / SMART AUTOMATION</span>
+            <span class="round-icon">↗</span>
+          </div>
+
+          <div class="loop-icon" aria-hidden="true">
+            <span>↻</span><i>✦</i>
+          </div>
+
+          <div class="feature-bottom-copy">
+            <h3>Set it. Flow it.</h3>
+            <p>
+              Turn repetitive steps into simple,
+              repeatable workflows.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-card feature-dark reveal">
+          <div class="feature-card-head">
+            <span>03 / AI CO-PILOT</span>
+            <span class="round-icon">↗</span>
+          </div>
+
+          <div class="agent-visual">
+            <div class="agent-orbit one"></div>
+            <div class="agent-orbit two"></div>
+            <span>✳</span>
+          </div>
+
+          <div class="feature-bottom-copy">
+            <h3>Think bigger.</h3>
+            <p>
+              Go from a messy idea to a clear first draft
+              in seconds.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-card feature-light reveal">
+          <div class="feature-card-head">
+            <span>04 / CLEAR INSIGHTS</span>
+            <span class="round-icon">↗</span>
+          </div>
+
+          <div class="mini-bars" aria-hidden="true">
+            <i style="--bar:40%"></i>
+            <i style="--bar:62%"></i>
+            <i style="--bar:49%"></i>
+            <i style="--bar:83%"></i>
+            <i style="--bar:71%"></i>
+            <i style="--bar:100%"></i>
+            <i style="--bar:87%"></i>
+          </div>
+
+          <div class="feature-bottom-copy">
+            <h3>See the big picture.</h3>
+            <p>
+              Understand what matters, without drowning
+              in dashboards.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="demo-section section-pad"
+    id="demo"
+    aria-labelledby="demo-title"
+  >
+    <div class="container demo-layout">
+
+      <div class="demo-copy reveal">
+        <div class="section-tag light">
+          [ 02 / EXPLORE THE EXPERIENCE ]
+        </div>
+
+        <h2 id="demo-title">
+          Less clicking.<br><span>More doing.</span>
+        </h2>
+
+        <p>
+          Choose a workflow and watch how NEXLOOP could
+          turn a complex task into a clear outcome.
+        </p>
+
+        <div
+          class="demo-choices"
+          role="group"
+          aria-label="Select a demo workflow"
+        >
+          <button
+            class="workflow-choice active"
+            data-flow="launch"
+            aria-pressed="true"
+          >
+            <span>01</span> Launch campaign <b>↗</b>
+          </button>
+
+          <button
+            class="workflow-choice"
+            data-flow="standup"
+            aria-pressed="false"
+          >
+            <span>02</span> Weekly standup <b>↗</b>
+          </button>
+
+          <button
+            class="workflow-choice"
+            data-flow="insights"
+            aria-pressed="false"
+          >
+            <span>03</span> Customer insights <b>↗</b>
+          </button>
+        </div>
+
+        <p class="demo-note">
+          ✳ Interactive simulation. No real AI service
+          is connected.
+        </p>
+      </div>
+
+      <div class="demo-console reveal" id="demo-console">
+        <div class="console-bar">
+          <div>
+            <span class="console-light"></span>
+            NEXLOOP / FLOW ENGINE
+          </div>
+          <span>DEMO MODE <b>●</b></span>
+        </div>
+
+        <div class="console-content">
+          <div class="console-kicker">
+            YOUR SELECTED WORKFLOW
+          </div>
+
+          <h3 id="workflow-title">Product launch campaign</h3>
+
+          <p id="workflow-description">
+            Turn a product brief into a structured
+            launch plan.
+          </p>
+
+          <div class="flow-line">
+            <div class="flow-step">
+              <span class="step-symbol">01</span>
+              <div>
+                <small>INPUT</small>
+                <strong id="flow-input">Product brief</strong>
+              </div>
+            </div>
+
+            <span class="flow-connector">↓</span>
+
+            <div class="flow-step">
+              <span class="step-symbol">✳</span>
+              <div>
+                <small>PROCESS</small>
+                <strong id="flow-process">
+                  Organize &amp; prioritize
+                </strong>
+              </div>
+            </div>
+
+            <span class="flow-connector">↓</span>
+
+            <div class="flow-step">
+              <span class="step-symbol">↗</span>
+              <div>
+                <small>OUTPUT</small>
+                <strong id="flow-output">
+                  Launch roadmap
+                </strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="console-result">
+            <div class="result-title">
+              ✦ SIMULATED RESULT
+              <span id="result-status">READY</span>
+            </div>
+
+            <p id="result-text" aria-live="polite">
+              Choose "Run demo" to preview
+              a generated workflow outcome.
+            </p>
+          </div>
+
+          <button class="run-button" id="run-demo" type="button">
+            Run interactive demo <span>↗</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section
+    class="story-section section-pad"
+    id="how"
+    aria-labelledby="how-title"
+  >
+    <div class="container story-layout">
+
+      <div class="story-sticky reveal">
+        <div class="section-tag">
+          [ 03 / THE METHOD ]
+        </div>
+
+        <h2 id="how-title">
+          From idea<br>to <span>impact.</span>
+        </h2>
+
+        <div class="story-stage" id="story-stage">
+          <div class="stage-cross cross-one">✳</div>
+          <div class="stage-cross cross-two">✦</div>
+          <div class="stage-orbit orbit-a"></div>
+          <div class="stage-orbit orbit-b"></div>
+
+          <div class="stage-center">
+            <span id="story-big-number">01</span>
+            <p id="story-card-text">
+              Bring everything together
+            </p>
+          </div>
+
+          <span class="stage-footer">
+            PROCESS / <b id="story-stage-label">COLLECT</b>
+          </span>
+        </div>
+      </div>
+
+      <div class="story-steps">
+        <article class="story-step active" data-story-step="0">
+          <span>01 / COLLECT</span>
+          <h3>Start with<br>what you've got.</h3>
+          <p>
+            Notes, links, and loose ideas. Bring them
+            into one place and let the clutter disappear.
+          </p>
+        </article>
+
+        <article class="story-step" data-story-step="1">
+          <span>02 / SHAPE</span>
+          <h3>Find a<br>clear direction.</h3>
+          <p>
+            Turn rough thinking into organized plans
+            and next steps everyone can follow.
+          </p>
+        </article>
+
+        <article class="story-step" data-story-step="2">
+          <span>03 / MOVE</span>
+          <h3>Make progress<br>feel effortless.</h3>
+          <p>
+            Stay focused on the important decisions
+            while routine steps move along.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <section
+    class="pricing-section section-pad"
+    id="pricing"
+    aria-labelledby="pricing-title"
+  >
+    <div class="container">
+
+      <div class="pricing-heading reveal">
+        <div>
+          <div class="section-tag">
+            [ 04 / SIMPLE BY DESIGN ]
+          </div>
+
+          <h2 id="pricing-title">
+            Big ideas.<br><span>Clear pricing.</span>
+          </h2>
+        </div>
+
+        <div class="billing-switch" role="group" aria-label="Billing period">
+          <button
+            class="active"
+            type="button"
+            data-billing="monthly"
+            aria-pressed="true"
+          >
+            Monthly
+          </button>
+
+          <button
+            type="button"
+            data-billing="yearly"
+            aria-pressed="false"
+          >
+            Yearly <small>–20%*</small>
+          </button>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+
+        <article class="price-card reveal">
+          <span class="price-eyebrow">01 / GET STARTED</span>
+          <h3>Starter</h3>
+          <p>For curious minds exploring what's possible.</p>
+
+          <div class="price-amount">
+            <span>$</span>
+            <strong data-monthly="0" data-yearly="0">0</strong>
+            <small>/ mo</small>
+          </div>
+
+          <a href="#contact" class="price-button">
+            Explore Starter ↗
+          </a>
+
+          <ul>
+            <li>One personal workspace</li>
+            <li>3 sample workflows</li>
+            <li>Basic task organization</li>
+            <li>Community access</li>
+          </ul>
+        </article>
+
+        <article class="price-card featured reveal">
+          <div class="popular-tag">MOST POPULAR ✳</div>
+          <span class="price-eyebrow">02 / FIND YOUR FLOW</span>
+          <h3>Pro</h3>
+          <p>For independent creators moving faster.</p>
+
+          <div class="price-amount">
+            <span>$</span>
+            <strong data-monthly="24" data-yearly="19">24</strong>
+            <small>/ mo</small>
+          </div>
+
+          <a href="#contact" class="price-button">
+            Explore Pro ↗
+          </a>
+
+          <ul>
+            <li>Unlimited concept workflows</li>
+            <li>AI-assisted drafting preview</li>
+            <li>Personalized dashboards</li>
+            <li>Priority template library</li>
+          </ul>
+        </article>
+
+        <article class="price-card reveal">
+          <span class="price-eyebrow">03 / BUILD TOGETHER</span>
+          <h3>Teams</h3>
+          <p>For people turning big plans into reality.</p>
+
+          <div class="price-amount">
+            <span>$</span>
+            <strong data-monthly="59" data-yearly="47">59</strong>
+            <small>/ mo</small>
+          </div>
+
+          <a href="#contact" class="price-button">
+            Explore Teams ↗
+          </a>
+
+          <ul>
+            <li>Shared team workspaces</li>
+            <li>Team workflow templates</li>
+            <li>Collaboration insights</li>
+            <li>Custom onboarding concept</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="pricing-disclaimer">
+        * Illustrative pricing for this fictional SaaS concept.
+        Yearly amounts are example monthly equivalents,
+        billed annually. No paid service is available.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="faq-section section-pad" id="faq">
+    <div class="container faq-layout">
+
+      <div class="reveal">
+        <div class="section-tag">
+          [ 05 / GOOD QUESTIONS ]
+        </div>
+
+        <h2>Curious?<br><span>Good.</span></h2>
+
+        <p>
+          Everything you might want to know
+          about this demo concept.
+        </p>
+      </div>
+
+      <div class="faq-list reveal">
+
+        <details>
+          <summary>
+            <span>01</span>
+            Is NEXLOOP a real AI product?
+            <b>+</b>
+          </summary>
+          <p>
+            No. NEXLOOP is an independent frontend concept
+            created for a development portfolio. Its interface,
+            workflows, and pricing are illustrative.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            <span>02</span>
+            Does the workflow demo use AI?
+            <b>+</b>
+          </summary>
+          <p>
+            The interactive demo uses predefined responses
+            in JavaScript. It shows how a real AI integration
+            could feel, without connecting to an external API.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            <span>03</span>
+            Does the pricing toggle work?
+            <b>+</b>
+          </summary>
+          <p>
+            Yes. The toggle updates the displayed example
+            prices. There is no checkout or payment processing.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            <span>04</span>
+            Is this landing page mobile-friendly?
+            <b>+</b>
+          </summary>
+          <p>
+            Yes. Its layout adapts to smaller devices,
+            including navigation, dashboard, feature cards,
+            and pricing.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="contact-section"
+    id="contact"
+    aria-labelledby="contact-title"
+  >
+    <div class="container contact-grid">
+
+      <div class="contact-left reveal">
+        <div class="section-tag light">
+          [ 06 / THE NEXT CHAPTER ]
+        </div>
+
+        <h2 id="contact-title">
+          Ready for<br>
+          your <em>next</em><br>
+          big thing<span>?</span>
+        </h2>
+
+        <p>
+          See what a future-ready AI workspace could look like.
+          This is a concept demo, so no messages are sent.
+        </p>
+
+        <div class="contact-doodle" aria-hidden="true">↗</div>
+      </div>
+
+      <div class="contact-right reveal">
+
+        <div class="form-heading">
+          <span>DEMO CONTACT FORM</span>
+          <span>NO BACKEND CONNECTED / 001</span>
+        </div>
+
+        <form id="demo-contact-form" novalidate>
+
+          <label for="contact-name">Your name</label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Alex Morgan"
+            minlength="2"
+            required
+          >
+
+          <label for="contact-email">Email address</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="alex@company.com"
+            required
+          >
+
+          <label for="contact-interest">
+            What are you exploring?
+          </label>
+
+          <select id="contact-interest" name="interest">
+            <option>AI productivity workspace</option>
+            <option>Team collaboration platform</option>
+            <option>Custom SaaS landing page</option>
+            <option>Just exploring the demo</option>
+          </select>
+
+          <button class="contact-submit" type="submit">
+            Preview submission <span>↗</span>
+          </button>
+
+          <p
+            class="form-feedback"
+            id="form-feedback"
+            role="status"
+            aria-live="polite"
+          >
+            This form validates locally.
+            Your information is not sent or stored.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div>
+      <a class="brand" href="#top">
+        <span class="brand-symbol">✳</span>
+        nexloop<span class="brand-period">.</span>
+      </a>
+      <p>Make room for better work.</p>
+    </div>
+
+    <nav aria-label="Footer navigation">
+      <a href="#features">Product</a>
+      <a href="#demo">Demo</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span id="current-year">2026</span> NEXLOOP</span>
+    <span>FICTIONAL PRODUCT · ORIGINAL PORTFOLIO CONCEPT</span>
+    <span>DESIGNED &amp; BUILT WITH HTML / CSS / JS</span>
+  </div>
+</footer>
+
+</body>
+</html>
